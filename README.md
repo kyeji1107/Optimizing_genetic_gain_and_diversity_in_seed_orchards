@@ -60,10 +60,6 @@ The optimization problem is defined as:
 ### Reproducibility
 This repository provides all necessary components to reproduce the optimization framework described in the manuscript. Users can apply the model to their own datasets by modifying input files without changing the core model.
 
-### Citation
-If you use this code, please cite:
-Kim et al. (2026). Optimizing genetic gain and diversity in seed orchards using an algebraic modeling language for mathematical programming.
-
 ### Contact
 For any inquiries, please contact:
 
