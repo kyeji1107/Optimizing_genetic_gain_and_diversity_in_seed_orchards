@@ -20,7 +20,7 @@ The framework formulates seed orchard deployment as a mixed-integer quadratic pr
 	Lower and upper bounds for contributions
 - c.dat  
 	Coancestry or genomic relationship matrix
-- mobps.r
+- mobps.r  
   	Execution script #1 for the case studies - generating simulated populations 
 - so.r  
 	Execution script #2 for the case studies - building model, and running optimization
