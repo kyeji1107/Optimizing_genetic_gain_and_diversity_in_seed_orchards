@@ -27,13 +27,14 @@ Contains the fundamental algebraic modeling files.
 ### 2. Case Study & R Scripts (/CaseStudy_R)
 Demonstrates the practical application of the model using simulated data.
 - 01_data_gen.R: Data generation using the MoBPS package and genetic parameter estimation using ASReml.
-- 02_scenarios.R: Implementation of two optimization scenarios and result visualization.
+- 02_scenario_1.R: Implementation of optimization scenario 1.
+- 03_scenario_2.R: Implementation of optimization scenario 2.
 
 ---
 
 ## Requirements
 - AMPL: https://ampl.com
-- Solver: A solver supporting MIQP (e.g., Gurobi, CPLEX).
+- Solver: A solver supporting MIQP (e.g., Gurobi).
 - R Environment (Optional, for Case Study):
   - Required packages: MoBPS, ASReml-R
 
@@ -45,13 +46,11 @@ Demonstrates the practical application of the model using simulated data.
 1. Install AMPL and a compatible solver.
 2. Prepare your input data files (b.dat, l.dat, u.dat, c.dat) following the AMPL format.
 3. Set scalar parameters in so.dat.
-4. Execute the optimization:
-   ampl so.run
+4. Execute the optimization in so.run
 
 ### Option B: Running the Case Study (R)
 1. Run 01_data_gen.R to simulate the population and estimate genetic values (requires ASReml license).
-2. Run 02_scenarios.R to execute the optimization across different scenarios. 
-   (Note: This script bridges the R-generated data with the AMPL optimization framework.)
+2. Run 02_scenario_1.R or 03_scenario_2.R to execute the optimization across different scenarios. 
 
 ---
 
@@ -62,7 +61,7 @@ The optimization problem is defined as:
   - Total contribution equals 1.
   - Individual lower (l) and upper (u) bounds on contributions.
   - Constraint on Status Number (effective population size).
-- Extensions: Supports pairwise coancestry, pollen contamination, and sex-specific contribution adjustments.
+- Extensions: Supports pairwise coancestry, pollen contamination, and female/male contribution adjustments.
 
 ---
 
@@ -74,8 +73,8 @@ This repository provides all necessary components to reproduce the results descr
 ### Contact
 For any inquiries, please contact:
 
-- Corresponding author: prof. Milan Lstibůrek  
+- Corresponding author: Prof. Milan Lstibůrek  
 	E-mail: lstiburek@fld.czu.cz
 
-- First author: dr. Ye-Ji Kim  
+- First author: Dr. Ye-Ji Kim  
 	E-mail: kyeji1107@gmail.com
