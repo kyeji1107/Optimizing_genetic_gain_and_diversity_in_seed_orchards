@@ -9,7 +9,7 @@ The framework formulates seed orchard deployment as a mixed-integer quadratic pr
 - Separation of model and data for easy reuse
 - Compatible with multiple solvers (Gurobi recommended)
 
-### Repository Structure
+### Repository Structure (need to be revised)
 - so.mod  
 	Core AMPL model (parameters, variables, objective function, constraints)
 - so.dat  
@@ -20,8 +20,10 @@ The framework formulates seed orchard deployment as a mixed-integer quadratic pr
 	Lower and upper bounds for contributions
 - c.dat  
 	Coancestry or genomic relationship matrix
-- so.run  
-	Execution script for loading model, data, and running optimization
+- mobps.r
+	Execution script #1 for the case studies - generating simulated populations 
+- so.r  
+	Execution script #2 for the case studies - building model, and running optimization
 
 ### Model Description
 The optimization problem is defined as:
@@ -34,23 +36,13 @@ The optimization problem is defined as:
 - Extensions (optional):
 	- Pairwise coancestry constraints
 	- Pollen contamination
-	- Female and male contribution modeling
+	- Female and male contribution
 
 ### Requirements
 - AMPL (https://ampl.com)
 - Solver supporting MIQP:
 	- Gurobi (recommended)
 	- Other compatible solvers may also be used
-
-### How to Run
-1. Install AMPL and a compatible solver
-2. Prepare input data files:
-	- b.dat (breeding values)
-	- l.dat, u.dat (bounds)
-	- c.dat (coancestry matrix)
-3. Set parameters in so.dat
-4. Run the model:
-	ampl so.run
 
 ### Data Preparation
 - Input data must follow the format expected by AMPL
