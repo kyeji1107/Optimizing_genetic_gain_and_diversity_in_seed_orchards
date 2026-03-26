@@ -9,7 +9,7 @@ The framework formulates seed orchard deployment as a mixed-integer quadratic pr
 - Separation of model and data for easy reuse
 - Compatible with multiple solvers (Gurobi recommended)
 
-### Repository Structure (need to be revised)
+### Repository Structure
 - so.mod  
 	Core AMPL model (parameters, variables, objective function, constraints)
 - so.dat  
@@ -20,10 +20,8 @@ The framework formulates seed orchard deployment as a mixed-integer quadratic pr
 	Lower and upper bounds for contributions
 - c.dat  
 	Coancestry or genomic relationship matrix
-- mobps.r  
-  	Execution script #1 for the case studies - generating simulated populations 
-- so.r  
-	Execution script #2 for the case studies - building model, and running optimization
+- so.run
+  	Execution script for loading model, data, and running optimization
 
 ### Model Description
 The optimization problem is defined as:
@@ -48,6 +46,16 @@ The optimization problem is defined as:
 - Input data must follow the format expected by AMPL
 - Data can be generated using R, Python, MATLAB, or other tools
 - The framework is independent of the data generation process
+
+### How to Run
+1. Install AMPL and a compatible solver
+2. Prepare input data files:
+	- b.dat (breeding values)
+	- l.dat, u.dat (bounds)
+	- c.dat (coancestry matrix)
+3. Set parameters in so.dat
+4. Run the model:
+	ampl so.run
 
 ### Reproducibility
 This repository provides all necessary components to reproduce the optimization framework described in the manuscript. Users can apply the model to their own datasets by modifying input files without changing the core model.
