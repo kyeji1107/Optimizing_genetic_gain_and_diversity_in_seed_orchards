@@ -20,7 +20,7 @@ The framework formulates seed orchard deployment as a mixed-integer quadratic pr
 	Lower and upper bounds for contributions
 - c.dat  
 	Coancestry or genomic relationship matrix
-- so.run
+- so.run  
   	Execution script for loading model, data, and running optimization
 
 ### Model Description
