@@ -63,8 +63,8 @@ This repository provides all necessary components to reproduce the optimization 
 ### Contact
 For any inquiries, please contact:
 
-- Corresponding author: Prof. Milan Lstibůrek  
-	Email: lstiburek@fld.czu.cz
+- Corresponding author: prof. Milan Lstibůrek  
+	E-mail: lstiburek@fld.czu.cz
 
-- First author: Dr. Ye-Ji Kim  
-	Email: kyeji1107@gmail.com
+- First author: dr. Ye-Ji Kim  
+	E-mail: kyeji1107@gmail.com
