@@ -1,8 +1,7 @@
 rm(list = ls())
 
 # Ensure this path exists on your machine
-#setwd("C:/Users/sagariya_yobu/OneDrive - CZU v Praze/Documents/Simulation/G3/YeJi-G3")
-setwd("C:/Christi/G3")
+setwd("")
 
 set.seed(1234)
 
@@ -16,8 +15,7 @@ library(asreml)
 # --- 1. Setup Input Parameters ---
 snp <- 20300
 add <- 300
-heri_values <- c(0.2, 0.6)
-#heri_values <- 0.2
+heri_values <- 0.2
 ch.nr <- 4
 nf <- 5000
 np <- 100
