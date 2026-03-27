@@ -1,6 +1,6 @@
 # Data Sample: MoBPS Simulation & GBLUP Results
 
-This folder contains sample datasets generated using the **MoBPS** package, including genetic parameters and optimization inputs.
+This folder contains sample datasets generated using the **MoBPS** package.
 
 ## Population Abbreviations
 
